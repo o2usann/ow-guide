@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f5f1">
+<title>おつゆのOWガイド</title><meta name="description" content="気になるヒーローと、さっき遊んだマップをすぐ調べられるオーバーウォッチ攻略ガイド。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script type="module" src="guide.js"></script></head>
+<body>
+<a class="skip" href="#guide">一覧へ移動</a>
+<header class="top"><div class="wrap top-inner"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">OW</span><span>おつゆのOWガイド</span></a><nav aria-label="メインナビゲーション"><a data-tab="heroes" href="#heroes">ヒーロー</a><a data-tab="maps" href="#maps">マップ</a></nav></div></header>
+<main class="wrap" id="main">
+<p class="data-warning" id="data-warning" role="status" hidden></p>
+<section class="intro" aria-labelledby="headline">
+<div class="intro-copy"><p class="eyebrow">OVERWATCH GUIDE</p><h1 id="headline">気になるところから、<br>オーバーウォッチ。</h1><p class="intro-description">使ってみたいヒーローも、さっき迷ったマップも。<br class="wide">知りたいところを、さっと見にいこう。</p></div>
+<div class="intro-links" id="entry"></div>
+</section>
+<section id="guide" class="guide" aria-labelledby="section-title">
+<div class="guide-head"><div><p class="eyebrow" id="section-en">HEROES</p><h2 id="section-title">ヒーロー一覧</h2></div><label class="search"><span class="search-mark" aria-hidden="true"></span><span class="sr" id="search-label">ヒーロー名を検索</span><input disabled type="search" id="query" aria-labelledby="search-label" placeholder="ヒーロー名を検索"></label></div>
+<div class="filter-row"><div class="filters" id="filters" aria-label="絞り込み"></div><span id="count" role="status">読み込み中…</span></div>
+<div class="grid" id="grid"></div>
+</section>
+</main>
+<footer class="wrap foot"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">OW</span>おつゆのOWガイド</a><p>オーバーウォッチの非公式ファンガイド</p></footer>
+<dialog id="detail" aria-labelledby="detail-title"><div class="dialog-frame"><div class="dialog-top"><button id="close" type="button">← 一覧へ戻る</button></div><div id="detail-content"></div></div></dialog>
+</body></html>
